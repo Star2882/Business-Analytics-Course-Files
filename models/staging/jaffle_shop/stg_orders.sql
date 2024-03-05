@@ -4,4 +4,4 @@ select
     order_date,
     status
 
-from `dbt-tutorial`.jaffle_shop.orders
+from dbt_training.dbt_cdelrio.jaffle_shop.orders
