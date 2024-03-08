@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: stripe
-    database: dbt_training
-    schema: stripe
+    schema: "{{ target.schema }}"
     tables:
       - name: payments
+        identifier: stripe_payments

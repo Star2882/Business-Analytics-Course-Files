@@ -1,9 +1,10 @@
 version: 2
 
 sources:
-  - name: jaffle_shop
-    database: dbt_training
-    schema: jaffle_shop
+  - name: jaffle_shop 
+    schema: "{{ target.schema }}"
     tables:
       - name: customers
+        identifier: jaffle_shop_customers
       - name: orders
+        identifier: jaffle_shop_orders
