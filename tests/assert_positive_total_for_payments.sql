@@ -9,4 +9,4 @@ select
 from payments
 
 group by 1
-having total_amount < 0
+having total_amount > 0
